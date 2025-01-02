@@ -37,11 +37,11 @@ class CustomerScorer:
             scores_df[[column]].fillna(scores_df[column].mean())
           )
       
-      self.logger.info('Components scores calculated successfully')
+      self.logger.info('---Components scores calculated successfully---')
       return scores_df
     
     except Exception as e:
-      self.logger.error(f'Error calculating components scores: {str(e)}')
+      self.logger.error(f'---Error calculating components scores: {str(e)}---')
       raise
   
   def calculate_final_score(self, scores_df):
@@ -60,11 +60,11 @@ class CustomerScorer:
       result_df['final_score'] = final_score
       result_df['score_category'] = score_categories
 
-      self.logger.info('Final scores calculated successfully')
+      self.logger.info('---Final scores calculated successfully---')
       return result_df
     
     except Exception as e:
-      self.logger.error(f'Error calculating final scores: {str(e)}')
+      self.logger.error(f'---Error calculating final scores: {str(e)}---')
       raise
 
   def generate_insights(self, scored_data):
@@ -78,9 +78,9 @@ class CustomerScorer:
         ].to_dict('records')
       }
 
-      self.logger.info('Customer insights generated successfully')
+      self.logger.info('---Customer insights generated successfully---')
       return insights
     
     except Exception as e:
-      self.logger.error(f'Error generating insights: {str(e)}')
+      self.logger.error(f'---Error generating insights: {str(e)}---')
       raise

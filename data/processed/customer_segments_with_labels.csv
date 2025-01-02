@@ -1,5 +1,5 @@
-Segment,total_spend_mean,total_spend_count,purchase_frequency_mean,customer_lifespan_mean,Segment_Label
-0,3180.78,1865,16.36,267.89,High Value Irregular
-1,610.78,2179,273.52,29.71,Low Value Irregular
-2,938.09,286,1936.3,1.37,Low Value Regular
-3,172508.53,8,120.11,337.25,High Value Regular
+Segment,AvgTotalSpent,TotalSpentCount,AvgPurchaseFrequency,AvgCustomerLifespan,SegmentLabel
+0,360.38,872,31.11,1.02,BudgetRegular
+1,332.74,752,28.4,5.26,BudgetIrregular
+2,2377.4,673,1.26,241.04,HighValueIrregular
+3,779.54,1607,1.02,169.69,HighSpendingIrregular
